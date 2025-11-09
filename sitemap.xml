@@ -6,11 +6,21 @@
             http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
 <!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
 
-
 <url>
-  <loc>https://calculatuprestamo.com/</loc>
-  <lastmod>2025-11-09T04:47:31+00:00</lastmod>
+  <loc>https://calculatuprestamo.com/prestamos-personales.html</loc>
+  <lastmod>2025-11-09</lastmod>
 </url>
-
+<url>
+  <loc>https://calculatuprestamo.com/creditos-hipotecarios.html</loc>
+  <lastmod>2025-11-09</lastmod>
+</url>
+<url>
+  <loc>https://calculatuprestamo.com/creditos-vehiculares.html</loc>
+  <lastmod>2025-11-09</lastmod>
+</url>
+<url>
+  <loc>https://calculatuprestamo.com/educacion-financiera.html</loc>
+  <lastmod>2025-11-09</lastmod>
+</url>
 
 </urlset>
