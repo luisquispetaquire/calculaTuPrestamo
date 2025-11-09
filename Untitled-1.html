@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="es-PE">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- SEO esencial -->
+  <title>Calculadora de préstamos en Perú (S/): Simula tu crédito y TCEA fácilmente</title>
+  <meta name="description"
+    content="Simula tu préstamo personal, vehicular o hipotecario en soles. Calcula tu cuota mensual, intereses y TCEA con nuestra calculadora online gratuita.">
+  <meta name="robots" content="index,follow,max-snippet:-1,max-image-preview:large,max-video-preview:-1">
+  <link rel="canonical" href="https://calculatuprestamo.com/">
+
+  <!-- Geosegmentación y expansión futura -->
+  <link rel="alternate" hreflang="es-PE" href="https://calculatuprestamo.com/">
+
+  <!-- Open Graph / Twitter -->
+  <meta property="og:site_name" content="CalculaTuPrestamo.com">
+  <meta property="og:title" content="Calculadora de préstamos en Perú (S/): Simula tu crédito y TCEA fácilmente">
+  <meta property="og:description"
+    content="Ingresa monto, TEA y plazo y obtén tu cuota mensual, intereses y total a pagar. Gratis y rápido.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://calculatuprestamo.com/">
+  <meta property="og:image" content="https://calculatuprestamo.com/img/og-preview.jpg">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculadora de préstamos en Perú (S/)">
+  <meta name="twitter:description" content="Simula tu crédito y conoce tu cuota mensual e intereses.">
+  <meta name="twitter:image" content="https://calculatuprestamo.com/img/og-preview.jpg">
+
+  <!-- Favicon (SVG embebido) -->
+  <link rel="icon"
+    href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='20' fill='%23004a99'/><text x='50' y='58' dominant-baseline='middle' text-anchor='middle' font-size='48' font-family='Arial' fill='white'>CTP</text></svg>">
+
+  <!-- Performance: preconnect / dns-prefetch -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+
+  <!-- JSON-LD (SoftwareApplication, WebSite+SearchAction, FAQ, Breadcrumb) -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"SoftwareApplication",
+    "name":"Calculadora de Préstamos",
+    "operatingSystem":"All",
+    "applicationCategory":"FinanceApplication",
+    "description":"Simula tu crédito y calcula tu cuota mensual con nuestra calculadora online gratuita.",
+    "url":"https://calculatuprestamo.com",
+    "publisher":{"@type":"Organization","name":"CalculaTuPrestamo.com"}
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"WebSite",
+    "name":"CalculaTuPrestamo.com",
+    "url":"https://calculatuprestamo.com/",
+    "potentialAction":{
+      "@type":"SearchAction",
+      "target":"https://calculatuprestamo.com/?q={search_term_string}",
+      "query-input":"required name=search_term_string"
+    }
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"BreadcrumbList",
+    "itemListElement":[
+      {"@type":"ListItem","position":1,"name":"Inicio","item":"https://calculatuprestamo.com/"},
+      {"@type":"ListItem","position":2,"name":"Calculadora de préstamos","item":"https://calculatuprestamo.com/"}
+    ]
+  }
+  </script>
+
+  <!-- Estilos -->
+  <style>
+    /* Reset + base */
+    *,
+    *::before,
+    *::after {
+      box-sizing: border-box
+    }
+
+    html {
+      scroll-behavior: smooth
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Inter', system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      background: #f8f9fa;
+      color: #333;
+      line-height: 1.6;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh
+    }
+
+    /* Layout */
+    .container {
+      width: 100%;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 1rem
+    }
+
+    header {
+      background: #fff;
+      padding: 1rem 0;
+      border-bottom: 1px solid #dee2e6;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, .03)
+    }
+
+    header .logo {
+      font-size: 1.5rem;
+      font-weight: 700;
+      color: #004a99;
+      text-decoration: none
+    }
+
+    main {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 2.5rem 1rem
+    }
+
+    footer {
+      background: #343a40;
+      color: #f8f9fa;
+      padding: 2.5rem 1rem;
+      margin-top: auto;
+      text-align: center
+    }
+
+    footer .footer-links {
+      margin-bottom: 1rem
+    }
+
+    footer .footer-links a {
+      color: #f8f9fa;
+      text-decoration: none;
+      margin: 0 .75rem
+    }
+
+    footer .footer-links a:hover {
+      text-decoration: underline
+    }
+
+    /* Card calculadora */
+    .calculator-container {
+      width: 100%;
+      max-width: 560px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, .07);
+      padding: 2rem;
+      border-top: 5px solid #004a99
+    }
+
+    @media (min-width:600px) {
+      .calculator-container {
+        padding: 2.5rem
+      }
+    }
+
+    h1,
+    h2,
+    h3 {
+      color: #004a99;
+      margin: 0 0 .5rem
+    }
+
+    h1 {
+      font-size: 1.9rem;
+      font-weight: 700;
+      text-align: center
+    }
+
+    h2 {
+      font-size: 1.1rem;
+      font-weight: 400;
+      color: #555;
+      text-align: center;
+      margin-bottom: 1.75rem
+    }
+
+    .form-group {
+      margin-bottom: 1.25rem
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: .5rem;
+      font-weight: 600;
+      color: #333
+    }
+
+    .input-group {
+      display: flex
+    }
+
+    input[type="text"],
+    input[type="number"],
+    select {
+      width: 100%;
+      padding: .75rem;
+      border: 1px solid #ccc;
+      border-radius: 8px;
+      font-size: 1rem;
+      transition: border-color .3s, box-shadow .3s;
+      background: #fff
+    }
+
+    input:focus,
+    select:focus {
+      border-color: #0d6efd;
+      box-shadow: 0 0 0 3px rgba(13, 110, 253, .2);
+      outline: 0
+    }
+
+    .input-group input[type="text"],
+    .input-group input[type="number"] {
+      border-top-right-radius: 0;
+      border-bottom-right-radius: 0;
+      flex: 1
+    }
+
+    .input-group .input-group-addon,
+    .input-group select {
+      border-top-left-radius: 0;
+      border-bottom-left-radius: 0
+    }
+
+    .input-group .input-group-addon {
+      padding: .75rem;
+      background: #f8f9fa;
+      border: 1px solid #ccc;
+      border-radius: 0 8px 8px 0;
+      font-weight: 600;
+      color: #555
+    }
+
+    .button-group {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 1rem;
+      margin-top: 1.5rem
+    }
+
+    .btn {
+      padding: .85rem;
+      border: 0;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: 600;
+      cursor: pointer;
+      transition: background-color .2s, transform .1s
+    }
+
+    .btn:active {
+      transform: scale(.98)
+    }
+
+    .btn-primary {
+      background: #0d6efd;
+      color: #fff
+    }
+
+    .btn-primary:hover {
+      background: #0b5ed7
+    }
+
+    .btn-secondary {
+      background: #6c757d;
+      color: #fff
+    }
+
+    .btn-secondary:hover {
+      background: #5a6268
+    }
+
+    /* Resultados */
+    #results {
+      margin-top: 1.75rem;
+      background: #eef7ff;
+      border-radius: 8px;
+      padding: 1.25rem;
+      display: none
+    }
+
+    #results h3 {
+      text-align: center;
+      margin: 0 0 1rem;
+      font-size: 1.2rem
+    }
+
+    .result-item {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: .7rem 0;
+      border-bottom: 1px solid #d0e7ff
+    }
+
+    .result-item:last-child {
+      border-bottom: none
+    }
+
+    .result-item span {
+      font-weight: 700;
+      font-size: 1.08rem;
+      color: #0b5ed7
+    }
+
+    /* Tabla amortización (tarjeta separada) */
+    #amortization-table-container {
+      display: none;
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 5px 25px rgba(0, 0, 0, .07);
+      padding: 2rem;
+      border-top: 5px solid #004a99
+    }
+
+    @media (min-width:600px) {
+      #amortization-table-container {
+        padding: 2.5rem
+      }
+    }
+
+    .table-wrapper {
+      overflow-x: auto
+    }
+
+    #amortization-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: .92rem;
+      min-width: 560px
+    }
+
+    #amortization-table th,
+    #amortization-table td {
+      border: 1px solid #dee2e6;
+      padding: .6rem;
+      text-align: right
+    }
+
+    #amortization-table th {
+      background: #f8f9fa;
+      font-weight: 600;
+      color: #333;
+      text-align: center
+    }
+
+    #amortization-table tbody tr:nth-child(even) {
+      background: #f8f9fa
+    }
+
+    #amortization-table td:first-child {
+      text-align: center;
+      font-weight: 600
+    }
+
+    /* Ads: reservar altura para evitar CLS */
+    .ads-slot {
+      width: 100%;
+      max-width: 728px;
+      min-height: 250px;
+      margin: 1.75rem auto;
+      border-radius: 8px;
+      display: block
+    }
+
+    .ads-note {
+      font-size: .88rem;
+      color: #6c757d;
+      text-align: center;
+      margin-top: .5rem
+    }
+
+    /* Bloque SEO educativo */
+    .seo-content {
+      margin-top: 2rem;
+      width: 100%;
+      max-width: 800px;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 12px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, .05)
+    }
+
+    .seo-content h3 {
+      font-size: 1.4rem;
+      margin-bottom: .75rem
+    }
+
+    .seo-content p {
+      margin: .75rem 0;
+      color: #444
+    }
+
+    /* Mobile */
+    @media (max-width:600px) {
+      h1 {
+        font-size: 1.6rem
+      }
+
+      .calculator-container {
+        padding: 1.5rem
+      }
+
+      .button-group {
+        grid-template-columns: 1fr
+      }
+
+      .seo-content {
+        padding: 1.5rem
+      }
+    }
+  </style>
+
+  <!-- Google Analytics (gtag) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-JN0DGZX001"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-JN0DGZX001');
+  </script>
+
+  <!-- AdSense -->
+  <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8019787145709001"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- HEADER -->
+  <header>
+    <div class="container">
+      <a class="logo" href="/" aria-label="Ir al inicio">CalculaTuPrestamo.com</a>
+    </div>
+  </header>
+
+  <!-- MAIN -->
+  <main>
+    <section class="calculator-container" aria-labelledby="calc-title">
+      <h1 id="calc-title">Calculadora de préstamos en Perú</h1>
+      <h2>Simula tu crédito personal, vehicular o hipotecario en segundos</h2>
+
+      <!-- Bloque AdSense superior (no intrusivo) -->
+      <ins class="adsbygoogle ads-slot" style="display:block" data-ad-client="ca-pub-8019787145709001"
+        data-ad-slot="1000000001" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <div class="ads-note" aria-hidden="true">Publicidad</div>
+
+      <form id="loan-form" aria-describedby="form-help">
+        <!-- Monto -->
+        <div class="form-group">
+          <label for="amount">Monto del préstamo</label>
+          <div class="input-group">
+            <span class="input-group-addon" style="border-right:0;border-radius:8px 0 0 8px">S/</span>
+            <input type="text" inputmode="decimal" id="amount" placeholder="10000" min="1" required aria-required="true"
+              aria-describedby="amount-help" style="border-radius:0 8px 8px 0;border-left:0">
+          </div>
+          <small id="amount-help" style="color:#666">Ingresa solo números y hasta 2 decimales.</small>
+        </div>
+
+        <!-- Tasa anual (TEA) -->
+        <div class="form-group">
+          <label for="interest">Tasa de interés anual (TEA)</label>
+          <div class="input-group">
+            <input type="text" inputmode="decimal" id="interest" placeholder="12.5" min="0.01" step="0.01" required
+              aria-required="true" aria-describedby="interest-help">
+            <span class="input-group-addon" style="border-radius:0 8px 8px 0;border-left:0">%</span>
+          </div>
+          <small id="interest-help" style="color:#666">TEA anual (no TCEA). Ejemplo: 18.50</small>
+        </div>
+
+        <!-- Plazo -->
+        <div class="form-group">
+          <label for="term">Plazo</label>
+          <div class="input-group">
+            <input type="number" id="term" placeholder="24" min="1" step="1" required aria-required="true"
+              aria-describedby="term-help">
+            <select id="term-type" aria-label="Tipo de plazo">
+              <option value="months" selected>Meses</option>
+              <option value="years">Años</option>
+            </select>
+          </div>
+          <small id="term-help" style="color:#666">Ejemplo: 24 meses o 2 años.</small>
+        </div>
+
+        <!-- Botones -->
+        <div class="button-group">
+          <button type="submit" id="btn-calculate" class="btn btn-primary">Calcular</button>
+          <button type="button" id="btn-clear" class="btn btn-secondary">Borrar</button>
+        </div>
+        <p id="form-help" style="margin-top:.5rem;color:#6c757d">Los resultados son referenciales y no constituyen
+          asesoría financiera.</p>
+      </form>
+
+      <!-- Resultados -->
+      <div id="results" role="region" aria-live="polite">
+        <h3>Resumen de tu préstamo</h3>
+        <div class="result-item"><strong>Cuota mensual:</strong><span id="monthly-payment-result"></span></div>
+        <div class="result-item"><strong>Total de intereses:</strong><span id="total-interest-result"></span></div>
+        <div class="result-item"><strong>Total a pagar:</strong><span id="total-payment-result"></span></div>
+      </div>
+
+      <!-- Bloque AdSense intermedio -->
+      <ins class="adsbygoogle ads-slot" style="display:block" data-ad-client="ca-pub-8019787145709001"
+        data-ad-slot="1000000002" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <div class="ads-note" aria-hidden="true">Publicidad</div>
+    </section>
+
+    <!-- Tabla de amortización -->
+    <section id="amortization-table-container" aria-labelledby="amortization-title">
+      <h3 id="amortization-title">Plan de pagos detallado</h3>
+      <div class="table-wrapper" role="region" aria-live="polite">
+        <table id="amortization-table">
+          <thead>
+            <tr>
+              <th>Mes</th>
+              <th>Cuota</th>
+              <th>Interés</th>
+              <th>Capital</th>
+              <th>Saldo pendiente</th>
+            </tr>
+          </thead>
+          <tbody id="amortization-table-body"></tbody>
+        </table>
+      </div>
+
+      <!-- Bloque AdSense bajo la tabla -->
+      <ins class="adsbygoogle ads-slot" style="display:block" data-ad-client="ca-pub-8019787145709001"
+        data-ad-slot="1000000003" data-ad-format="auto" data-full-width-responsive="true"></ins>
+      <div class="ads-note" aria-hidden="true">Publicidad</div>
+    </section>
+
+    <!-- Contenido SEO evergreen + FAQ JSON-LD incrustado -->
+    <article class="seo-content">
+      <h3>¿Cómo se calcula tu cuota mensual?</h3>
+      <p>La cuota mensual se calcula con la fórmula de amortización francesa, considerando el monto, la tasa de interés
+        efectiva anual (TEA) y el plazo. Nuestra herramienta convierte automáticamente la TEA a interés mensual y
+        proyecta pagos constantes durante todo el período.</p>
+      <p>En Perú, la <strong>TCEA</strong> refleja el costo total del crédito (intereses + comisiones + seguros). Por
+        eso, usa esta calculadora para comparar y validar que la cuota sea sostenible antes de solicitar tu préstamo.
+      </p>
+      <p>Recomendaciones: revisa tu presupuesto, compara tasas entre entidades y evita plazos excesivamente largos que
+        incrementen el total de intereses.</p>
+
+      <script type="application/ld+json">
+      {
+        "@context":"https://schema.org",
+        "@type":"FAQPage",
+        "mainEntity":[
+          {
+            "@type":"Question",
+            "name":"¿Cómo se calcula la cuota mensual de un préstamo?",
+            "acceptedAnswer":{"@type":"Answer","text":"Aplicando la fórmula de amortización francesa, considerando monto, tasa (TEA) y plazo. La calculadora lo hace automáticamente."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Cuál es la diferencia entre TEA y TCEA?",
+            "acceptedAnswer":{"@type":"Answer","text":"La TEA es la tasa efectiva anual; la TCEA incluye comisiones y seguros, mostrando el costo total real del crédito."}
+          },
+          {
+            "@type":"Question",
+            "name":"¿Los resultados son definitivos?",
+            "acceptedAnswer":{"@type":"Answer","text":"No. Son referenciales. Verifica condiciones y comisiones con tu entidad financiera antes de contratar."}
+          }
+        ]
+      }
+      </script>
+    </article>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <div class="footer-links">
+        <a href="/prestamos-personales.html">Préstamos Personales</a>
+        <a href="/creditos-hipotecarios.html">Créditos Hipotecarios</a>
+        <a href="/creditos-vehiculares.html">Créditos Vehiculares</a>
+        <a href="/educacion-financiera.html">Educación Financiera</a>
+      </div>
+      <p style="margin:.25rem 0 .5rem">&copy; 2025 CalculaTuPrestamo.com. Todos los derechos reservados.</p>
+      <p style="color:#adb5bd;font-size:.9rem">Los cálculos son referenciales. Este sitio no brinda asesoría financiera.
+      </p>
+    </div>
+  </footer>
+
+  <!-- Lógica de la calculadora (defer para mejorar INP/LCP) -->
+  <script defer>
+    document.addEventListener('DOMContentLoaded', function () {
+      const form = document.getElementById('loan-form');
+      const btnClear = document.getElementById('btn-clear');
+      const amountEl = document.getElementById('amount');
+      const interestEl = document.getElementById('interest');
+      const termEl = document.getElementById('term');
+      const termTypeEl = document.getElementById('term-type');
+
+      const resultsEl = document.getElementById('results');
+      const monthlyPaymentResultEl = document.getElementById('monthly-payment-result');
+      const totalInterestResultEl = document.getElementById('total-interest-result');
+      const totalPaymentResultEl = document.getElementById('total-payment-result');
+
+      const tableContainerEl = document.getElementById('amortization-table-container');
+      const tableBodyEl = document.getElementById('amortization-table-body');
+
+      // Validación en vivo (solo números y hasta 2 decimales)
+      function enforceNumericInput(input) {
+        input.addEventListener('input', function (e) {
+          let value = e.target.value || "";
+          value = value.replace(',', '.');               // permitir coma
+          value = value.replace(/[^0-9.]/g, '');          // eliminar no numérico
+          const parts = value.split('.');
+          if (parts.length > 2) { value = parts[0] + '.' + parts.slice(1).join(''); }
+          if (parts[1] && parts[1].length > 2) { parts[1] = parts[1].slice(0, 2); value = parts.join('.'); }
+          e.target.value = value;
+        });
+      }
+      [amountEl, interestEl, termEl].forEach(enforceNumericInput);
+
+      function calculateLoan(e) {
+        e.preventDefault();
+        const principal = parseFloat((amountEl.value || '').replace(',', '.'));
+        const annual = parseFloat((interestEl.value || '').replace(',', '.'));
+        let n = parseInt(termEl.value, 10);
+
+        if (!isFinite(principal) || !isFinite(annual) || !isFinite(n) || principal <= 0 || annual <= 0 || n <= 0) { return; }
+        if (termTypeEl.value === 'years') { n = n * 12; }
+
+        const i = (annual / 100) / 12;
+        const x = Math.pow(1 + i, n);
+        const monthly = (principal * x * i) / (x - 1);
+
+        if (isFinite(monthly)) {
+          const total = monthly * n;
+          const interestTotal = total - principal;
+          displayResults(monthly, interestTotal, total);
+          generateAmortizationTable(principal, i, n, monthly);
+          try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (_) {} // render ad si aplica
+        }
+      }
+
+      function displayResults(monthly, interest, total) {
+        const fx = new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' });
+        monthlyPaymentResultEl.textContent = fx.format(monthly);
+        totalInterestResultEl.textContent = fx.format(interest);
+        totalPaymentResultEl.textContent = fx.format(total);
+        resultsEl.style.display = 'block';
+      }
+
+      function clearForm() {
+        form.reset();
+        resultsEl.style.display = 'none';
+        tableContainerEl.style.display = 'none';
+        tableBodyEl.innerHTML = '';
+        monthlyPaymentResultEl.textContent = '';
+        totalInterestResultEl.textContent = '';
+        totalPaymentResultEl.textContent = '';
+      }
+
+      function generateAmortizationTable(principal, i, n, monthly) {
+        tableBodyEl.innerHTML = '';
+        let balance = principal;
+        const fx = new Intl.NumberFormat('es-PE', { style: 'currency', currency: 'PEN' });
+        let cuota = monthly;
+
+        for (let k = 1; k <= n; k++) {
+          const interes = balance * i;
+          let capital = cuota - interes;
+
+          if (k === n) { // ajuste final por redondeo
+            capital = balance;
+            cuota = balance + interes;
+          }
+          balance -= capital;
+          if (balance < 0.01) { balance = 0; }
+
+          const tr = document.createElement('tr');
+          tr.innerHTML = `
+            <td>${k}</td>
+            <td>${fx.format(cuota)}</td>
+            <td>${fx.format(interes)}</td>
+            <td>${fx.format(capital)}</td>
+            <td>${fx.format(balance)}</td>`;
+          tableBodyEl.appendChild(tr);
+        }
+        tableContainerEl.style.display = 'block';
+      }
+
+      form.addEventListener('submit', calculateLoan);
+      btnClear.addEventListener('click', clearForm);
+
+      // Inicializar bloques AdSense (evita CLS al tener altura reservada)
+      try { (adsbygoogle = window.adsbygoogle || []).push({}); } catch (_) {}
+    });
+  </script>
+</body>
+
+</html>
