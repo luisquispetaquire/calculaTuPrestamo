@@ -1,26 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset
-      xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
-      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-      xsi:schemaLocation="http://www.sitemaps.org/schemas/sitemap/0.9
-            http://www.sitemaps.org/schemas/sitemap/0.9/sitemap.xsd">
-<!-- created with Free Online Sitemap Generator www.xml-sitemaps.com -->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Página principal -->
+  <url>
+    <loc>https://calculatuprestamo.com</loc>
+    <lastmod>2025-11-10</lastmod>
+    <priority>1.0</priority>
+  </url>
 
-<url>
-  <loc>https://calculatuprestamo.com/prestamos-personales.html</loc>
-  <lastmod>2025-11-09</lastmod>
-</url>
-<url>
-  <loc>https://calculatuprestamo.com/creditos-hipotecarios.html</loc>
-  <lastmod>2025-11-09</lastmod>
-</url>
-<url>
-  <loc>https://calculatuprestamo.com/creditos-vehiculares.html</loc>
-  <lastmod>2025-11-09</lastmod>
-</url>
-<url>
-  <loc>https://calculatuprestamo.com/educacion-financiera.html</loc>
-  <lastmod>2025-11-09</lastmod>
-</url>
+  <!-- Páginas de contenido (URLs sin .html) -->
+  <url>
+    <loc>https://calculatuprestamo.com/prestamos-personales</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.9</priority>
+  </url>
 
+  <url>
+    <loc>https://calculatuprestamo.com/creditos-hipotecarios</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatuprestamo.com/creditos-vehiculares</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.9</priority>
+  </url>
+
+  <url>
+    <loc>https://calculatuprestamo.com/educacion-financiera</loc>
+    <lastmod>2025-11-09</lastmod>
+    <priority>0.8</priority>
+  </url>
 </urlset>
